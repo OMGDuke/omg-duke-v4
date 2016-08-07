@@ -113,7 +113,6 @@ h3 {
 
 .project-slider {
   width:200%;
-  background:pink;
   position:relative;
   left: 0%;
   transition: left 0.5s;
@@ -257,6 +256,125 @@ h3 {
 .project-return:hover {
   opacity:1;
 }
+
+/*CONTACT*/
+
+.contact-section {
+  text-align:center;
+}
+
+.social {
+  max-width: 700px;
+  margin: 0px auto 50px;
+  display:flex;
+  justify-content:space-around;
+  flex-wrap:wrap;
+}
+
+.social a {
+  display:block;
+  background: #eee;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  color: rgba(0,0,0,0.7);
+  border-radius: 50%;
+  font-size: 28px;
+  margin: 20px;
+  position: relative;
+}
+
+.social a:hover {
+  transform: scale(1.2);
+  color: rgba(0,0,0,0.7);
+}
+
+.horizontal-bar {
+  width: 20vw;
+  height: 0px;
+  border-top: 4px solid #666;
+  margin: 0px auto 50px;
+}
+
+.email {
+  display: inline-block;
+  font-size: 8vw;
+  font-weight: 300;
+  color: rgba(0,0,0,0.5);
+  line-height: 1;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-decoration: none;
+}
+
+.email:hover {
+  color: rgba(0,0,0,0.7);
+}
+
+/*CONTACT FORM*/
+
+.contact-section form {
+  max-width: 450px;
+  margin: 0 auto 50px;
+}
+
+.contact-section form input, textarea {
+  border: 3px solid rgba(0,0,0,0.5);
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.contact-section form input:focus, textarea:focus {
+  outline:none;
+  border-color: rgba(0,0,0,0.7);
+}
+
+.contact-section form label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.contact-section form label span {
+  display:block;
+}
+
+.details label{
+  width: 50%;
+  float:left;
+  box-sizing: border-box;
+}
+
+.details label:nth-child(1) {
+  padding-right:5px;
+}
+
+.details label:nth-child(2) {
+  padding-left:5px;
+}
+
+.contact-section form textarea {
+  height: 10em;
+}
+
+.contact-section form input[type="submit"] {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  font-size:18px;
+  text-transform: uppercase;
+  width: 33%;
+}
+
+.contact-section form input[type="submit"]:hover {
+  background: rgba(0,0,0,0.7);
+}
+
+.submit-wrap {
+  text-align: right;
+}
+
+
 
 /*FOOTER*/
 footer {
