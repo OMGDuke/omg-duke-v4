@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>OMG Duke</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/font-awesome.min.css">
     <link rel="stylesheet" href="public/css/style.css">
   </head>
   <body>
@@ -13,9 +14,9 @@
       <div><img  class="logo" src="public/images/logo.png" alt="logo" /></div>
 
       <nav>
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <a href="#" class="scroll-link" data-id="about">About</a>
+        <a href="#"class="scroll-link" data-id="projects">Projects</a>
+        <a href="#"class="scroll-link" data-id="contact">Contact</a>
         <a href="/blog">Blog</a>
       </nav>
 
@@ -23,24 +24,127 @@
       <p class="subtitle">Dev for hire</p>
     </header>
 
-    <div class="about">
+    <section class="about">
+      <h3 id="about">About Me</h3>
 
-    </div>
+      <div class="avatar"></div>
+
+      <div class="blurb">
+        <p><strong>Hi, I'm Alex!</strong> I'm a Junior Developer looking for
+          work in either Front or Back End roles. I'm available
+          immediately and I'd love to work for you! I'm also an appropriater of
+          far too many Steam games and try to learn a new
+          skill everyday.
+        </p>
+      </div>
+
+      <!-- <div class="tech-box">
+        <div class="tech-left">
+          <h3>Languages</h3>
+          <p>Javascript</p>
+          <p>Ruby</p>
+        </div>
+        <div class="tech-right">
+          <h3>Frameworks</h3>
+          <p>Angular</p>
+          <p>Ionic</p>
+          <p>Rails</p>
+        </div>
+      </div> -->
+    </section>
+
+    <section class="projects project-section">
+      <h3 id="projects">Projects</h3>
+      <div class="project-slider">
+        <div class="thumbnail-wrap">
+          <div class="thumbnail-box">
+            <a id="raid-project" class="thumb raid-thumb">
+              <div class="thumb-overlay">
+                <strong>Raid Ready</strong>
+              </div>
+            </a>
+
+            <a id="happy-project" class="thumb happy-thumb">
+              <div class="thumb-overlay">
+                <strong>Happy Belly</strong>
+              </div>
+            </a>
+
+            <a id="ww-project" class="thumb ww-thumb">
+              <div class="thumb-overlay">
+                <strong>Werewolves</strong>
+              </div>
+            </a>
+
+            <a id="mb-project" class="thumb bnb-thumb">
+              <div class="thumb-overlay">
+                <strong>Makers BnB</strong>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="project-wrap">
+          <div class="project-box">
+            <div class="project-return"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+
+            <div id="raid-project" class="project-desc">
+              <h4>Raid Ready</h4>
+              <img class="project-image" src="public/images/raid-ready-float.jpg" alt="Raid Ready Screenshot" />
+              <a href="https://raid-ready.herokuapp.com/">Live Demo</a>
+              <p>Uses the Battle.net api to analyse the effectiveness of your
+                team for a video game.
+                <a href="https://github.com/OMGDuke/raid-ready">Frontend Github Repo</a>,
+                <a href="https://github.com/OMGDuke/raid-ready-api">Backend Github Repo</a>
+              </p>
+            </div>
+
+            <div id="happy-project" class="project-desc">
+              <h4>Happy Belly</h4>
+              <img class="project-image" src="public/images/hb-iphone.jpg" alt="Happy Belly Screenshot" />
+              <p>The app is designed to help people with food allergies or dietary
+                requirements quickly know whether they can eat a certain food. It
+                was built with AngularJS, Ionic, Cordova, Javascript. It has a
+                backend built in Rails using a Postgres DB. <a href="https://github.com/OMGDuke/allergy_scanner_frontend">Frontend Github Repo</a>, <a href="https://github.com/OMGDuke/allergy_scanner_backend">Backend Github Repo</a>
+              </p>
+            </div>
+
+            <div id="ww-project" class="project-desc">
+              <h4>Werewolves</h4>
+              <img class="project-image" src="public/images/ww-macbook.jpg" alt="Werewolves Screenshot" />
+              <p>A tool for the popular party game, New players can learn about
+              the game and the narrator can be guided through each step. It
+              was built using AngularJS, Javascript and Materialize. <a href="https://github.com/OMGDuke/Werewolves">Github Repo</a>
+              </p>
+            </div>
+
+            <div id="mb-project" class="project-desc">
+              <h4>Makers BnB</h4>
+              <img class="project-image" src="public/images/mb-logo.jpg" alt="Makers BnB Screenshot" />
+              <p>A clone of AirBnB which allows you to view and book a place to
+              stay. Built using Ruby, Sinatra, Postgres. <a href="https://github.com/OMGDuke/makers_bnb">Github Repo</a>
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer>
       <div class="end">
         <div><img  class="logo" src="public/images/logo.png" alt="logo" /></div>
         <div class="content-wrap">
           <nav>
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+            <a href="#" class="scroll-link" data-id="about">About</a>
+            <a href="#"class="scroll-link" data-id="projects">Projects</a>
+            <a href="#"class="scroll-link" data-id="contact">Contact</a>
             <a href="/blog">Blog</a>
           </nav>
           <p class="copyright">&copy; 2016 OMGDuke</p>
         </div>
       </div>
     </footer>
-    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="public/js/scripts.js"></script>
   </body>
 </html>

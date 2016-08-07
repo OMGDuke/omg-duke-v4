@@ -9,6 +9,7 @@ header {
   background: url(../images/header.jpg) center -50px;
   background-size: cover;
   position: relative;
+  background-repeat: no-repeat;
 }
 
 .logo {
@@ -58,6 +59,7 @@ header h1 span {
   display: inline-block;
   padding: 0.2em 0.5em;
   border: #fff solid 10px;
+
 }
 
 header .subtitle {
@@ -69,10 +71,198 @@ header .subtitle {
   line-height: 1;
 }
 
+
+/*ABOUT*/
+h3 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #666;
+  text-align: center;
+  padding: 50px 0 30px;
+}
+
+.avatar {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  background: url(../images/profile.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: -webkit-flex;
+  margin: 0 auto;
+}
+
+.blurb {
+  max-width: 620px;
+  padding: 0 15px;
+  margin: 50px auto;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 300;
+}
+
+/*PROJECTS*/
+.projects {
+  background-color: #eee;
+}
+
+.project-section {
+  overflow-x: hidden;
+}
+
+.project-slider {
+  width:200%;
+  background:pink;
+  position:relative;
+  left: 0%;
+  transition: left 0.5s;
+}
+
+.thumbnail-wrap, .project-wrap {
+  width: 50%;
+  float: left;
+}
+
+.thumbnail-box {
+  max-width: 960px;
+  margin: 0px auto;
+  padding-bottom: 50px;
+  overflow: auto;
+  zoom: 1;
+}
+
+.thumb {
+  display:block;
+  width: 25%;
+  padding-top: 16%;
+  float: left;
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow:hidden;
+}
+
+@media screen and (max-width: 760px) {
+  .thumb {
+    width: 50%;
+    padding-top: 26%;
+  }
+}
+
+.raid-thumb {
+  background-image: url(../images/raid-ready-float.jpg);
+}
+
+.happy-thumb {
+  background-image: url(../images/hb-iphone.jpg);
+}
+
+.ww-thumb {
+  background-image: url(../images/ww-macbook.jpg);
+}
+
+.bnb-thumb {
+  background-image: url(../images/mb-logo.jpg);
+}
+
+
+.thumb-overlay {
+  position:absolute;
+  top: 100%;
+  right: 0px;
+  bottom: 0;
+  left: 0px;
+  height: 100%;
+  text-align: center;
+  transition: top .2s;
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+  background-color: #2d2d2d;
+  opacity: 0.6;
+
+
+}
+
+.thumb-overlay strong {
+  display: block;
+  padding: 20px;
+  color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 1.2;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.thumb:hover .thumb-overlay {
+  position:absolute;
+  top: 0%;
+  right: 0px;
+  bottom: 0;
+  left: 0px;
+}
+
+.project-box {
+  max-width: 600px;
+  margin: 0px auto;
+  padding-bottom: 50px;
+  display:none;
+}
+
+.project-image {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.project-box h4 {
+  color: #666;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+.project-return {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  color: rgba(0,0,0,0.4);
+  opacity: 0.5;
+  position:relative;
+  top: 45px;
+  right: null;
+  bottom: null;
+  left: -60px;
+}
+
+@media screen and (max-width: 740px) {
+  .project-container {
+
+  }
+  .project-return {
+    left:20px
+  }
+
+  .project-box h4 {
+    margin-left: 60px;
+  }
+}
+
+.project-return:hover {
+  opacity:1;
+}
+
 /*FOOTER*/
 footer {
-  background: url(../images/header.jpg) center -50px;
+  background: url(../images/header.jpg) center -100px;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .end {
@@ -81,13 +271,8 @@ footer {
 }
 
 .end .logo {
-  height: 50px;
-  width: 50px;
-  float: left;
   margin: 0px 30px 0 30px;
-
 }
-
 
 .content-wrap {
   float: left;
