@@ -73,7 +73,7 @@ header .subtitle {
 
 @media (max-width:640px) {
   header .logo {
-    margin: 10px 45%;
+    margin: 10px 0 0 45%;
     text-align: justify;
     float:none;
   }
@@ -83,6 +83,10 @@ header .subtitle {
     text-align:center;
     padding-top: 20px;
     margin: 0 auto;
+  }
+
+  header nav a {
+    margin-right: 0px;
   }
 
   header h1 {
@@ -106,7 +110,7 @@ h3 {
   border-radius: 50%;
   height: 200px;
   width: 200px;
-  background: url(../images/profile.png);
+  background: url(../images/profile.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   display: -webkit-flex;
@@ -318,14 +322,19 @@ h3 {
 
 .email {
   display: inline-block;
-  font-size: 8vw;
+  font-size: 4vw;
   font-weight: 300;
   color: rgba(0,0,0,0.5);
   line-height: 1;
-  width: 90%;
   margin: 0 auto;
   margin-bottom: 50px;
   text-decoration: none;
+}
+
+@media (max-width:1200px) {
+  .email {
+    font-size: 8vw;
+  }
 }
 
 .email:hover {
