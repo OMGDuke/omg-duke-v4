@@ -5,14 +5,14 @@ body {
 
 /*HEADER*/
 header {
-  height: 450px;
   background: url(../images/header.jpg) center -50px;
   background-size: cover;
   position: relative;
   background-repeat: no-repeat;
+  padding-bottom: 100px;
 }
 
-.logo {
+header .logo {
   height: 50px;
   width: 50px;
   float: left;
@@ -20,7 +20,7 @@ header {
   opacity: 0.4;
 }
 
-.logo:hover {
+header .logo:hover {
   opacity: 0.7;
 }
 
@@ -29,7 +29,7 @@ header nav {
   margin: 30px 30px 0 0;
 }
 
-nav a {
+header nav a {
   display: inline-block;
   margin-right: 30px;
   color: rgba(0,0,0,0.5);
@@ -39,7 +39,7 @@ nav a {
   text-decoration:none
 }
 
-nav a:hover {
+header nav a:hover {
   color: rgba(0,0,0,0.7);
 }
 
@@ -72,10 +72,22 @@ header .subtitle {
 }
 
 @media (max-width:640px) {
-  .logo {
-    margin: 10px 50%;
-    justify-content: space-around;
+  header .logo {
+    margin: 10px 45%;
+    text-align: justify;
+    float:none;
+  }
+
+  header nav {
+    float:none;
     text-align:center;
+    padding-top: 20px;
+    margin: 0 auto;
+  }
+
+  header h1 {
+    padding-top: 0px;
+    font-size: 10vw;
   }
 }
 
@@ -386,9 +398,36 @@ h3 {
 
 /*FOOTER*/
 footer {
-  background: url(../images/header.jpg) center -100px;
+  background: url(../images/header.jpg) center -50px;
   background-size: cover;
   background-repeat: no-repeat;
+
+}
+
+footer .logo {
+  height: 50px;
+  width: 50px;
+  float: left;
+  margin: 10px 0 0 30px;
+  opacity: 0.4;
+}
+
+footer .logo:hover {
+  opacity: 0.7;
+}
+
+footer nav a {
+  display: inline-block;
+  margin-right: px;
+  color: rgba(0,0,0,0.5);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration:none
+}
+
+footer nav a:hover {
+  color: rgba(0,0,0,0.7);
 }
 
 .end {
