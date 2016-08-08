@@ -71,6 +71,14 @@ header .subtitle {
   line-height: 1;
 }
 
+@media (max-width:640px) {
+  .logo {
+    margin: 10px 50%;
+    justify-content: space-around;
+    text-align:center;
+  }
+}
+
 
 /*ABOUT*/
 h3 {
